@@ -1,0 +1,39 @@
+.sotial__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.sotial__link {
+    color: var(--client-logo);
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--color-secondary);
+    }
+
+
+    &--darktheme {
+        color: var(--color-secondary);
+        background-color: rgba(255, 255, 255, 0.1);
+
+        transition: background-color var(--time-duration) var(--timing-function);
+    }
+}
+
+
+.sotial__logo {
+    display: flex;
+    fill: currentColor;
+}

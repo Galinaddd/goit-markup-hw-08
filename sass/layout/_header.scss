@@ -1,0 +1,56 @@
+.header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--header-line);
+}
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+
+
+.header__adress-list {
+    display: flex;
+    margin-left: auto;
+}
+
+
+
+.header__adress-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* ****************************************** */
+
+
+
+
+.header__adress-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--common-txtcolor);
+    transition: color var(--time-duration) var(--timing-function);
+}
+
+
+.icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+.icon:hover {
+    fill: var(--accent-color);
+}

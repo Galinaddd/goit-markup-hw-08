@@ -1,0 +1,55 @@
+/**
+  |============================
+  | утиліти
+  |============================
+*/
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+
+
+/**
+  |============================
+  | Базові стилі
+  |============================
+*/
+@import './base/reset';
+@import './base/base';
+
+
+
+/**
+  |============================
+  | Стилі компонентів
+  |============================
+*/
+
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+@import './components/nav';
+@import './components/sotial-list.scss';
+@import './components/_form-mailing';
+@import './components/modal-window';
+@import './components/modal-form';
+
+
+
+
+
+
+/**
+  |============================
+  | Стилі секцій
+  |============================
+*/
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/prpjects';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';

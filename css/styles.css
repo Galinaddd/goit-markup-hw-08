@@ -1,0 +1,159 @@
+/* Стилизация Портфолио
+
+.button {
+  padding: 6px 22px;
+  background-color: var(--button-color);
+  color: var(--title-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-color: var(--button-color);
+  border-radius: 4px;
+
+  border: none;
+
+  transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function), box-shadow var(--time-duration) var(--timing-function);
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.gallery-item {
+  width: calc((100% - 60px) / 3);
+}
+
+
+.gallery-link {
+  display: inline-block;
+
+  transition: box-shadow var(--time-duration) var(--timing-function);
+}
+
+
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+.gallery-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+
+.gallery-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+
+.gallery-item img {
+  display: block;
+}
+
+
+.card-content {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--card-bottom-line);
+  border-left: 1px solid var(--card-bottom-line);
+  border-right: 1px solid var(--card-bottom-line);
+}
+
+
+.gallery-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+
+.gallery-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--common-txtcolor);
+}
+
+
+/*    OVERLAY    */
+
+
+.overlay-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.gallery-link:hover .overlay-card {
+  transform: translate(0);
+}
+
+
+.overlay-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+
+  transition: transform var(--time-duration) var(--timing-function);
+}
+
+
+.overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color-secondary);
+}
+
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
+.button-list .button:hover,
+.button-list .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+.button-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+
+/* Стилизация декоративных елементов */
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+.icon:hover {
+  fill: var(--accent-color);
+}
+
+*/

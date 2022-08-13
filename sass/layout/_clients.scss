@@ -1,0 +1,30 @@
+/* СЕкція Постійні клієнти */
+.client__list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.client__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--client-logo);
+    border: 1px solid currentColor;
+    border-radius: 4px;
+
+    transition: color var(--time-duration) var(--timing-function), border-color var(--time-duration) var(--timing-function);
+
+    &:focus,
+    &:hover {
+        fill: var(--accent-color);
+    }
+}
+
+.client__logo {
+    fill: currentColor;
+}

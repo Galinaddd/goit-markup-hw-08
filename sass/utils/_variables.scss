@@ -1,0 +1,28 @@
+:root {
+    /* Шрифты */
+    --primery-font: Roboto;
+    --secondary-font: Raleway;
+
+    /* Цвета */
+
+    --accent-color: #2196f3;
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --background-color: #2f303a;
+    --background-color-alfa: rgba(47, 48, 58, 0.8);
+    --title-color: rgb(33, 33, 33);
+    --common-txtcolor: #757575;
+    --footer-contacts: rgb(255, 255, 255, 0.6);
+    --button-color: #f5f4fa;
+
+    --header-line: #ececec;
+    --card-bottom-line: #eeeeee;
+
+    --background-hero: #C4C4C4;
+    --client-logo: #AFB1B8;
+    --client-background: #F5F5F5;
+
+    /* animaeion effect */
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --time-duration: 250ms;
+}
