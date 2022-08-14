@@ -1,7 +1,7 @@
 /* Стилизация Секция Особенности */
-.features-title {
+.features__title {
 
-
+    text-align: center;
     padding-bottom: 10px;
     color: var(--title-color);
     font-weight: 700;
@@ -14,15 +14,8 @@
 
 .features__list {
 
-
-    display: flex;
-
-
-    @media screen and (max-width: 767px) {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        // justify-content: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
 
     }
 }
@@ -30,31 +23,39 @@
 
 .features__item {
 
+    margin-bottom: 30px;
 
-    @media screen and (minx-width: 768px) {
-        width: calc((100% - 90px) / 2)
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+        width: calc((100% - 60px) / 2);
+        flex-wrap: wrap;
+
     }
 
 
-    @media screen and (minx-width: 1200px) {
-        width: calc((100% - 90px) / 4);
-    }
+}
+
+.features__item:last-child {
+    margin-bottom: 0;
 }
 
 
-.features__item:not(:last-child) {
-    @media screen and (minx-width: 1200px) {
-        margin-right: 30px;
-    }
-}
 
 
 .features__icon {
-    display: flex;
+
+    text-align: center;
     background-color: var(--button-color);
-    width: 270px;
-    height: 120px;
+
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;
+
+
+}
+
+.features__text {
+    display: inline-block;
+
+    text-align: left;
 }
