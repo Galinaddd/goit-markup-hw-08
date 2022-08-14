@@ -878,6 +878,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -886,10 +889,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .features__item {
-    gap: 30px;
-    width: calc((100% - 60px) / 2);
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 90px) / 4);
   }
 }
 
