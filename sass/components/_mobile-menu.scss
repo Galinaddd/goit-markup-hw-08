@@ -44,6 +44,7 @@
 
 .menu-container {
     display: none;
+    z-index: 50;
 
     // 
     &.is-open {

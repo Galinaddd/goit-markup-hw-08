@@ -612,6 +612,7 @@ body {
 
 .menu-container {
   display: none;
+  z-index: 50;
 }
 .menu-container.is-open {
   display: block;
