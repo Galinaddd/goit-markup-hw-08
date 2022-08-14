@@ -1,8 +1,11 @@
 .mailing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
 }
 
 
@@ -13,7 +16,9 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
     font-size: 16px;
@@ -30,12 +35,16 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 
 
 .mailing__input {
 
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 16px 15px;
 
@@ -48,4 +57,9 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }

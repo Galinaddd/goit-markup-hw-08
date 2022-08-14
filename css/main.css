@@ -265,17 +265,19 @@ body {
   fill: currentColor;
 }
 
-.mailing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 12px;
+@media screen and (min-width: 1200px) {
+  .mailing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 12px;
+  }
 }
 
 .mailing__btn {
@@ -290,6 +292,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 16px;
@@ -308,9 +313,14 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+@media screen and (min-width: 1200px) {
+  .mailing__btn {
+    margin-top: 0;
+  }
+}
 
 .mailing__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 16px 15px;
   color: var(--footer-contacts);
@@ -323,6 +333,11 @@ body {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__input {
+    width: 358px;
+  }
 }
 
 .backdrop {
@@ -787,6 +802,9 @@ body {
 
 /* Стилизация секции Герой */
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--background-color);
@@ -1124,20 +1142,52 @@ body {
 
 /* Стили футера */
 .footer {
+  max-width: 1600px;
   line-height: 24px;
   color: var(--color-secondary);
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.footer__container {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    margin-bottom: 0;
+  }
 }
 
 .footer__link {
@@ -1160,7 +1210,13 @@ body {
 }
 
 .footer__mailing {
-  margin-left: 93px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer__mailing {
+    margin-left: 93px;
+  }
 }
 
 .footer__title {
@@ -1173,9 +1229,24 @@ body {
 }
 
 .footer__sotial {
-  width: 206px;
-  height: 80px;
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__sotial {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 182px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__sotial {
+    margin-left: 70px;
+  }
 }
 
 /* Стилизация Портфолио */

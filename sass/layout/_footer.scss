@@ -1,15 +1,44 @@
 /* Стили футера */
 .footer {
+    max-width: 1600px;
     line-height: 24px;
     color: var(--color-secondary);
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer .container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+
+        display: flex;
+        align-items: baseline;
+
+    }
+
+
+}
+
+
+.footer__container {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -37,7 +66,12 @@
 
 
 .footer__mailing {
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 
@@ -52,7 +86,21 @@
 
 
 .footer__sotial {
-    width: 206px;
-    height: 80px;
-    margin-left: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 182px;
+        align-items: flex-start;
+        ;
+    }
+
+    // width: 206px;
+    // height: 80px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
