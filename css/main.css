@@ -1241,16 +1241,21 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 .gallery__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
 }
-.gallery__item:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
-.gallery__item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery__link {
@@ -1296,8 +1301,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
