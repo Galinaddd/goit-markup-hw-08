@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
 
   <link rel="stylesheet"
@@ -20,40 +21,70 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <a class="logo header__logo  link" href="./index.html">Web<span class="logo--primary">Studio</span></a>
-      <nav class="nav">
-        <ul class="list nav__list">
-          <li class="nav__item">
-            <a class="link nav__link nav__link--current" href="./index.html">Студія</a>
-          </li>
-          <li class="nav__item"><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li>
-          <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="list header__adress-list">
-        <li class="header__adress-item">
-          <div class="header__icon">
-            <a class="link header__adress-link" href="mailto:info@devstudio.com">
-              <svg class="icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>info@devstudio.com</a>
-          </div>
-        </li>
 
-        <li class="header__adress-item">
-          <div class="header__icon">
-            <a class="link header__adress-link" href="tel:+380961111111"><svg class="icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>+38 096 111 11 11</a>
-          </div>
-        </li>
-      </ul>
+      <a class="logo header__logo  link" href="./index.html">Web<span class="logo--primary">Studio</span></a>
+
+      <button class="menu-btn " type="button" aria-expanded="false" aria-controls="menu-container" data-menu-open>
+
+        <svg class="menu-btn__svg" width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="menu-btn__menu" href="./images/icons.svg#menu"></use>
+          <use class="menu-btn__cross" href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container " id="menu-container" data-menu>
+
+        <nav class="nav">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link nav__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item"><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+
+
+        <ul class="list header__adress-list">
+          <li class="header__adress-item">
+            <div class="header__icon">
+              <a class="link header__adress-link" href="mailto:info@devstudio.com">
+                <svg class="icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>info@devstudio.com</a>
+            </div>
+          </li>
+
+          <li class="header__adress-item">
+            <div class="header__icon">
+              <a class="link header__adress-link" href="tel:+380961111111"><svg class="icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="list sotial-list">
+          <li class="header-social__item" lang="en">
+            <a class="sotial__link " href="">Instagram</a>
+          </li>
+          <li class="header-social__item" lang="en">
+            <a class="sotial__link " href="">Twitter</a>
+          </li>
+          <li class="header-social__item" lang="en">
+            <a class="sotial__link " href="">Facebook</a>
+          </li>
+          <li class="header-social__item" lang="en">
+            <a class="sotial__link " href="">LinkedIn</a>
+          </li>
+      </div>
+
     </div>
   </header>
 
   <main>
-    <!--Секция-1 - типа герой-->
-    <section class="hero hero__overlay">
+    <!-- Секция-1 - типа герой-->
+    <!-- <section class="hero hero__overlay">
       <div class="container">
         <h1 class="hero__title">
           Ефективні рішення для <br />
@@ -61,10 +92,10 @@
         </h1>
         <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
       </div>
-    </section>
+    </section> -->
 
     <!--Секция-2 - Особенности-->
-    <section class="features section">
+    <!-- <section class="features section">
       <div class="container ">
         <h2 class="section__title visually-hidden">Осоливості</h2>
         <ul class="list features__list">
@@ -114,10 +145,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Секция-3 - Чем мы занимаемся-->
-    <section class="section projects">
+    <!-- <section class="section projects">
       <div class="container">
         <h2 class="section__title">Чим ми займаємося</h2>
         <ul class="list projects__list">
@@ -138,10 +169,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Секция-3 - Наша команда-->
-    <section class="team section">
+    <!-- <section class="team section">
       <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="list team__list">
@@ -272,11 +303,11 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- Секція наші постійні клієнти -->
 
-    <section class="section client">
+    <!-- <section class="section client">
       <div class="container">
         <h2 class="section__title">Постійні клієнти</h2>
         <ul class="list client__list">
@@ -324,11 +355,11 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
 
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <a class="logo link" href="./index.html">Web<span class="logo--secondary">Studio</span></a>
@@ -394,7 +425,7 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Modal window -->
   <div class="backdrop is-hidden" data-modal>
@@ -449,6 +480,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
