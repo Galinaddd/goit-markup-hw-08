@@ -924,6 +924,11 @@ body {
 .projects {
   padding-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .projects {
+    display: none;
+  }
+}
 
 .projects__list {
   display: -webkit-box;
