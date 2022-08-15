@@ -79,8 +79,14 @@
 
 .gallery__link {
     display: inline-block;
-
+    height: 100%;
     transition: box-shadow var(--time-duration) var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+    
+        }
 
 
 
@@ -106,6 +112,11 @@
     border-bottom: 1px solid var(--card-bottom-line);
     border-left: 1px solid var(--card-bottom-line);
     border-right: 1px solid var(--card-bottom-line);
+    @media screen and (min-width: 768px) {
+            flex-grow: 1;
+    
+        }
+
 }
 
 
