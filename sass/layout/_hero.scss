@@ -31,47 +31,55 @@
     // mobile screen        
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url("../../images/hero/Img@1x_sm.jpg");
+            rgba(47, 48, 58, 0.4)), url("../../images/hero/img@1x_sm.jpg");
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
 
-        background-image: url('../../images/hero/Img@2x_sm.jpg');
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url('../../images/hero/img@2x_sm.jpg');
 
     }
 
 
-
+// tablet
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url("../../images/hero/Img@1x_md.jpg");
+                rgba(47, 48, 58, 0.4)), url("../../images/hero/img@1x_md.jpg");
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
 
-            background-image: url('../../images/hero/Img@2x_md.jpg');
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url('../../images/hero/img@2x_md.jpg');
 
         }
 
     }
+
+    //desktop
 
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
         height: 600px;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)), url("../../images/hero/Img@1x_lg.jpg");
+                rgba(47, 48, 58, 0.4)), url("../../images/hero/img@1x_lg.jpg");
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
 
-            background-image: url('../../images/hero/Img@2x_lg.jpg');
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url('../../images/hero/img@2x_lg.jpg');
         }
     }
 }
