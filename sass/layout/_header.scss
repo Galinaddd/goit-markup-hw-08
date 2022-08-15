@@ -29,7 +29,7 @@
 
 .header__adress-list {
 
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.17;
     color: var(--common-txtcolor);
     margin-top: 302px;
@@ -45,7 +45,7 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
-        justify-content: baseline;
+        //justify-content: baseline;
         margin-left: auto;
     }
 }
@@ -128,7 +128,7 @@
 }
 
 .header__sotial-link {
-    font-size: 18 px;
+    font-size: 18px;
     color: var(--accent-color);
 }
 

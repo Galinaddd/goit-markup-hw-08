@@ -154,9 +154,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -679,7 +676,7 @@ body {
 }
 
 .header__adress-list {
-  font-size: 14;
+  font-size: 14px;
   line-height: 1.17;
   color: var(--common-txtcolor);
   margin-top: 302px;
@@ -700,9 +697,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
     margin-left: auto;
   }
 }
@@ -778,7 +772,7 @@ body {
 }
 
 .header__sotial-link {
-  font-size: 18 px;
+  font-size: 18px;
   color: var(--accent-color);
 }
 
