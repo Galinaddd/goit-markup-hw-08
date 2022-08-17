@@ -12,11 +12,12 @@
 
 .footer .container {
     text-align: center;
+   
 
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: baseline;
 
     }
@@ -35,9 +36,12 @@
 
 .footer__container {
     margin-bottom: 60px;
+justify-content: space-around;
+
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
+        text-align: left;
     }
 }
 
@@ -67,10 +71,15 @@
 
 .footer__mailing {
     margin-left: auto;
-    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
+        text-align: left;
     }
 }
 
@@ -93,14 +102,15 @@
     @media screen and (min-width: 768px) {
         margin-right: 0;
         margin-bottom: 0;
-        margin-left: 182px;
+        margin-left: 0;
         align-items: flex-start;
-        ;
+        
     }
 
     // width: 206px;
     // height: 80px;
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
+        text-align: left;
     }
 }

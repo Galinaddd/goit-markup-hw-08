@@ -44,11 +44,14 @@
 
 .menu-container {
     display: none;
+    height: 100%;
     z-index: 50;
 
     // 
     &.is-open {
-        display: block;
+        // display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     @media screen and (max-width: 767px) {

@@ -50,10 +50,10 @@
 
 
 .features__icon {
-
+   display: flex;
     text-align: center;
     background-color: var(--button-color);
-
+    height: 120px;
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;

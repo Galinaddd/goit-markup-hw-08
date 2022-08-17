@@ -624,10 +624,17 @@ body {
 
 .menu-container {
   display: none;
+  height: 100%;
   z-index: 50;
 }
 .menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -679,7 +686,7 @@ body {
   font-size: 14px;
   line-height: 1.17;
   color: var(--common-txtcolor);
-  margin-top: 302px;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
@@ -944,8 +951,12 @@ body {
 }
 
 .features__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   background-color: var(--button-color);
+  height: 120px;
   margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1120,6 +1131,7 @@ body {
 
 .client__item {
   width: calc((100% - 30px) / 2);
+  height: 92px;
 }
 @media screen and (min-width: 768px) {
   .client__item {
@@ -1142,6 +1154,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 100%;
   color: var(--client-logo);
   border: 1px solid currentColor;
   border-radius: 4px;
@@ -1178,9 +1192,8 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1199,10 +1212,13 @@ body {
 
 .footer__container {
   margin-bottom: 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -1227,11 +1243,17 @@ body {
 
 .footer__mailing {
   margin-left: auto;
-  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer__mailing {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__mailing {
     margin-left: 93px;
+    text-align: left;
   }
 }
 
@@ -1253,7 +1275,7 @@ body {
   .footer__sotial {
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: 182px;
+    margin-left: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1262,6 +1284,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__sotial {
     margin-left: 70px;
+    text-align: left;
   }
 }
 
