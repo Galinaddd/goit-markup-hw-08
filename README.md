@@ -1,13 +1,11 @@
-# WebStudio
+#WebStudio A portfolio website for a web studio, created as part of a web development learning
+project.
 
-Сайт-визитівка вебстудії, виконаний в рамках навчального проекту з верстки.
-
-## Технології
+##Technologies
 
 - HTML
 - CSS (SCSS)
 - JavaScript
 
-## Адаптивна Верстка
-
-Сайт пристований до трьох типів екранівЖ для мобільних телефонів, планшетів та настільних ПК
+##Responsive Design The website is responsive and adapts to three types of screens: for mobile
+phones, tablets, and desktop computers.
